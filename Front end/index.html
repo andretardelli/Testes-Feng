@@ -31,7 +31,7 @@
                           <div class = "col-md-2" style="margin-top: 40px;">
                             <div class = "row">
                               <div class = "col-md-12">
-                              <select class="selectpicker">
+                              <select class="form-control">
                                   <option value="nacaojr">Nação Jr - R$ 18,00</option>
                                   <option value="tradicao">Tradição - R$29,90</option>
                                   <option value="raça">Raça - R$39,90</option>
@@ -46,7 +46,7 @@
                             <div class = "row">
                               <div class = "col-md-12">
                               <label for="id_select"> Número de Convidados </label>
-                                <select class="selectpicker">
+                                <select class="form-control">
                                   <option value="1">1</option>
                                   <option value="2">2</option>
                                   <option value="3">3</option>
@@ -144,27 +144,34 @@
         <div class="col-md-4">
           <div class="container black">
                  <div class="col-md-12">
-                      <h2 class="title-text">MEUS DADOS</h2>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h2 class="title-text">MEUS DADOS</h2>
+                      </div>
+                      <div class="col-md-6">
+                        <h2 class="title-text align-right">1</h2>
+                      </div>
+                    </div>
                   </div>
                  <form class = "mainText">
                     <div class="form-group">
-                      <label for="exampleInputEmail1">Nome</label>
-                      <input  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nome">
+                      <label for="InputName">Nome</label>
+                      <input type="text" class="form-control" id="InputName" placeholder="Nome" required>
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputPassword1">CPF</label>
-                      <input class="form-control" id="exampleInputPassword1" placeholder="CPF">
+                      <label for="InputCPF">CPF</label>
+                      <input class="form-control" id="InputCPF" placeholder="CPF" required>
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputPassword1">email</label>
-                      <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email">
+                      <label for="InputEmail">Email</label>
+                      <input type="email" class="form-control" id="InputEmail" placeholder="Email" required>
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputPassword1">Senha</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                      <label for="InputPassword">Senha</label>
+                      <input type="password" class="form-control" id="InputPassword" placeholder="Senha" required>
                     </div>
-                     <p>Atenção: O CPF não poderá ser alterado posteriormente, atenção aos seus dados, eles são muito importantes para a identificação e validação da sua assinatura</p>
-                   
+                    </br>
+                     <p><strong>Atenção:</strong> O CPF não poderá ser alterado posteriormente, atenção aos seus dados, eles são muito importantes para a identificação e validação da sua assinatura</p>
                     <button type="submit" class="btn btn-primary">Cadastre aqui o seu endereço para receber o seu cartão ingresso</button>
                   </form>
                 </div>
@@ -174,42 +181,78 @@
         <div class="col-md-4">
           <div class="container black">
                 <div class="col-md-12">
-                      <h2 class="title-text">PAGAMENTO</h2>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h2 class="title-text">PAGAMENTO</h2>
+                      </div>
+                      <div class="col-md-6">
+                        <h2 class="title-text align-right">2</h2>
+                      </div>
+                    </div>
                   </div>
                  <form class = "mainText">
                       <div class="form-group">
                         <label for="exampleInputEmail1">Forma de Pagamento</label>
-                        <input  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nome">
+                       <select class="form-control" >
+                                  <option value="1">Cartão de Crédito</option>
+                                  <option value="2">Dinheiro</option>
+                      </select>
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputPassword1">Nome do portador (impresso no cartão)</label>
-                        <input class="form-control" id="exampleInputPassword1" placeholder="CPF">
+                        <label for="InputPortador">Nome do portador (impresso no cartão)</label>
+                         <input type="text" class="form-control" id="InputPortador" placeholder="Nome" required>
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputPassword1">CPF</label>
-                        <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email">
+                        <label for="InputCPF1">CPF</label>
+                        <input class="form-control" id="InputCPF1" placeholder="CPF" required>
                       </div>
                       <div class="form-group">
                         <label for="exampleInputPassword1">Numero do Cartão</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                        <input class="form-control" class="form-control" id="Cartao" placeholder="Numero do Cartão" required>
                       </div>
                       <div class = "row">
                           <div class="col-md-4">
                             <div class="form-group">
-                              <label for="exampleInputPassword1">Mês</label>
-                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                              <label for="Mes">Mês</label>
+                                  <select class="form-control" required >
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                  </select>
                             </div>
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                              <label for="exampleInputPassword1">Ano</label>
-                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                              <label for="Ano">Ano</label>
+                                  <select class="form-control" required >
+                                        <option value="1">2019</option>
+                                        <option value="2">2020</option>
+                                        <option value="3">2021</option>
+                                        <option value="4">2022</option>
+                                        <option value="5">2023</option>
+                                        <option value="6">2024</option>
+                                        <option value="7">2025</option>
+                                        <option value="8">2026</option>
+                                        <option value="9">2027</option>
+                                        <option value="10">2028</option>
+                                        <option value="11">2029</option>
+                                        <option value="12">2020</option>
+                                  </select>
                             </div>
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
                               <label for="exampleInputPassword1">Código de Segurança</label>
-                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                              <input type="password" class="form-control" maxlength="3" id="exampleInputPassword1" placeholder="Senha" required>
                             </div>
                           </div>
                       </div>
@@ -229,34 +272,58 @@
 
     <div class="col-md-4">
           <div class="container black">
-                <div class="col-md-12">
-                      <h2 class="title-text">PEDIDO</h2>
+               <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h2 class="title-text">PEDIDO</h2>
+                      </div>
+                      <div class="col-md-6">
+                        <h2 class="title-text align-right">3</h2>
+                      </div>
+                    </div>
                   </div>
                  <form class = "mainText">
                     <div class="form-group">
-                      <label for="exampleInputEmail1">Pedido</label>
-                      <input  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nome">
+                      <label for="exampleInputEmail1">Plano</label>
+                       <select class="form-control">
+                                  <option value="nacaojr">Nação Jr - R$ 18,00</option>
+                                  <option value="tradicao">Tradição - R$29,90</option>
+                                  <option value="raça">Raça - R$39,90</option>
+                                  <option value="+raça">+Raça - R$69,90</option>
+                                  <option value="amor">Amor - R$99,90</option>
+                                  <option value="+amor">+Amor - R$129,90</option>
+                                  <option value="paixao">Paixão - R$159,90</option>
+                                  <option value="+paixao">+Paixão - R$199,90</option>
+                              </select>
                     </div>
                     <div class="form-group">
                       <label for="exampleInputPassword1">Periodicidade</label>
-                      <input class="form-control" id="exampleInputPassword1" placeholder="CPF">
+                              <select class="form-control">
+                                  <option value="anual">Anual</option>
+                                  <option value="semestral">Semestral</option>
+                                  <option value="mensal">Mensal</option>
+                              </select>
                     </div>
                      <div class = "row">
                           <div class="col-md-4">
                             <div class="form-group">
                               <label for="exampleInputPassword1">Produto</label>
-                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                              <input type="text" value="Convidados" class="form-control" id="" placeholder="Convidados">
                             </div>
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                              <label for="exampleInputPassword1"></label>
-                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                              <label for="numeroConvidados">&nbsp;</label>
+                                <select class="form-control">
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                              </select>                            
                             </div>
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                              <label for="exampleInputPassword1"></label>
+                              <label for="exampleInputPassword1">&nbsp;</label>
                               <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
                             </div>
                           </div>
@@ -265,8 +332,8 @@
                       <label for="exampleInputPassword1">Cupom Desconto</label>
                       <input  class="form-control" id="exampleInputPassword1" placeholder="Cupom">
                     </div>
-                     <p>Total  :      R$289,00</p>
-
+                     <h3 class="title-text">Total  :      R$289,00</h3>
+                    </br>
                     <form action="/action_page.php" method="get">
                       <input type="checkbox" name="vehicle" value="Bike"> Eu li e concordo com os temos de uso<br>
                     </form>
@@ -292,6 +359,7 @@
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/bootstrap-select.min.js"></script>
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/jquery.mask.js"></script>
 
   </body>
 </html>
