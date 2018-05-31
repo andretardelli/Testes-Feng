@@ -9,6 +9,7 @@
 
 .box{
 	margin-bottom: 20px;
+	padding:15px;
 }
 
 .title-text{
@@ -55,4 +56,30 @@ button{
 
 .container{
 	min-height: 540px;
+}
+
+.textButton{
+	display:none;
+}
+
+@media only screen and (max-width: 770px) {
+    .mobile-box {
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 1425px) {
+    .col-md-4 {
+    	flex: 0 0 100%;
+    	max-width: 100%;
+    }
+
+      	.textInfo{
+  		display: none;
+  	}
+
+  	.textButton{
+  		display:block;
+  	}
+ 
 }
