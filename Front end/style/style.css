@@ -10,6 +10,7 @@
 .box{
 	margin-bottom: 20px;
 	padding:15px;
+	min-height:575px;
 }
 
 .title-text{
@@ -54,12 +55,22 @@ button{
 	background-color: #921b15 !important;
 }
 
-.container{
-	min-height: 540px;
-}
 
 .textButton{
 	display:none;
+}
+
+.size{
+	height: 120px;
+	width: 160px;
+}
+
+
+@media only screen and (max-width: 526px) {
+    .size {
+        	height: 100px;
+			width: 120px;
+    }
 }
 
 @media only screen and (max-width: 770px) {
